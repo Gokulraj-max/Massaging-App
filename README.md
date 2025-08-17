@@ -26,7 +26,7 @@ It provides secure authentication, one-to-one and group messaging, **end-to-end 
 
 ## 🛠 Tech Stack
 **Frontend**
-- Angular
+- Angular 18.2.1
 - TypeScript
 - Socket.IO (WebSockets)
 
@@ -35,6 +35,9 @@ It provides secure authentication, one-to-one and group messaging, **end-to-end 
 - MySQL
 - XAMPP (Server Environment)
 - PHPMailer (for password reset via email)
+
+**Node.js**
+- Latest version recommended
 
 ---
 
@@ -60,7 +63,13 @@ chat-app/
 
 ## ⚡ Installation & Setup
 
-### 1️⃣ Frontend (Angular)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Gokulraj-max/Massaging-App.git
+cd real-time-chat-app
+```
+
+### 2️⃣ Frontend (Angular)
 ```bash
 cd frontend
 npm install
@@ -68,20 +77,23 @@ ng serve
 ```
 ➡️ Runs at: **http://localhost:4200/**
 
+> ⚠️ Make sure Angular version **18.2.1** is installed.  
+> ⚠️ Use the latest Node.js version, otherwise it may not work.
+
 ---
 
-### 2️⃣ Backend (PHP + MySQL)
-1. Copy the `backend/` folder into your **XAMPP htdocs** directory.
-2. Install **PHPMailer** in your htdocs (for email password reset):  
+### 3️⃣ Backend (PHP + MySQL)
+1. Copy the `backend/` folder into your **XAMPP htdocs** directory.  
+2. Install **PHPMailer** in htdocs for password reset:  
    ```bash
    composer require phpmailer/phpmailer
    ```
-3. Start **Apache** & **MySQL** in XAMPP.
+3. Start **Apache** & **MySQL** in XAMPP.  
 4. Open **phpMyAdmin** → import `chatapp.sql`.
 
 ---
 
-### 3️⃣ Real-Time Messaging (Socket.IO)
+### 4️⃣ Real-Time Messaging (Socket.IO)
 Run the Node server:
 ```bash
 node server.js
@@ -93,51 +105,25 @@ node server.js
 ## 📸 Screenshots
 
 ### 🔑 Authentication
-- **Sign In**  
-  ![Sign In](screenshots/sign_in.png)
-
-- **Sign Up**  
-  ![Sign Up](screenshots/sign_up.png)
-
-- **Forgot Password**  
-  ![Forgot Password](screenshots/forgot_password.png)
-
----
+![Sign In](screenshots/sign_in.png)
+![Sign Up](screenshots/sign_up.png)
+![Forgot Password](screenshots/forgot_password.png)
 
 ### 📇 Contacts
-- **Add New Contact**  
-  Users can add new friends or colleagues by entering their email. Once added, the contact appears in their chat list for quick access.  
-  ![Add New Contact](screenshots/add_new_contact.png)
-
----
+![Add New Contact](screenshots/add_new_contact.png)
 
 ### 💬 Chat
-- **Chat List**  
-  ![Chat List](screenshots/chat_list.png)
-
-- **One-to-One Chat**  
-  ![Chat Message](screenshots/chat_msg.png)
-
----
+![Chat List](screenshots/chat_list.png)
+![One-to-One Chat](screenshots/chat_msg.png)
 
 ### 👥 Groups
-- **Group List**  
-  ![Group List](screenshots/group_list.png)
-
-- **Group Chat**  
-  ![Group Chat](screenshots/group_msg.png)
-
-- **Group Creation**  
-  ![Group Creation](screenshots/group_creation.png)
-
-- **View/Edit Group Details**  
-  ![Group Details](screenshots/view_or_edit_group_details.png)
-
----
+![Group List](screenshots/group_list.png)
+![Group Chat](screenshots/group_msg.png)
+![Group Creation](screenshots/group_creation.png)
+![View/Edit Group Details](screenshots/view_or_edit_group_details.png)
 
 ### 👤 Profile
-- **Profile Management**  
-  ![Profile Management](screenshots/profile_management.png)
+![Profile Management](screenshots/profile_management.png)
 
 ---
 
