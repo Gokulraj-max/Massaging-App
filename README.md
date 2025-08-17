@@ -1,8 +1,13 @@
 # 💬 Real-Time Chat Application
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
+
 A full-stack **real-time chat application** built with **Angular (Frontend)** and **PHP + MySQL (Backend)**.  
-It provides secure authentication, one-to-one and group messaging, **end-to-end encryption (E2EE)**, 
-profile management, and a responsive UI for all devices.
+It provides secure authentication, one-to-one and group messaging, **end-to-end encryption (E2EE)**, profile management, and a responsive UI for all devices.
+
+![Typing Animation](https://readme-typing-svg.herokuapp.com?size=24&color=F70A8D&width=500&lines=Real-time+Messaging+💬;Secure+Authentication+🔐;Media+Sharing+📂)
 
 ---
 
@@ -35,20 +40,21 @@ profile management, and a responsive UI for all devices.
 
 ## 📂 Project Structure
 
+```
 chat-app/
-│── frontend/ # Angular project
-│   ├── src/
-│   ├── package.json
+├── frontend/                 # Angular project
+│   ├── src/                  # Angular source files
+│   ├── package.json          # Node dependencies
 │   └── .gitignore
-│
-│── backend/ # PHP + MySQL
-│   ├── angular-auth/
-│   ├── forgot_password.php
-│   ├── reset_password.php
-│   └── chatapp.sql
-│
-│── screenshots/ # Project images
-│── README.md
+├── backend/                  # PHP + MySQL backend
+│   ├── angular-auth/         # Authentication related PHP files
+│   ├── forgot_password.php   # Password reset request
+│   ├── reset_password.php    # Reset password logic
+│   └── chatapp.sql           # Database schema
+├── server.js                 # Node.js Socket.IO server
+├── screenshots/              # Project screenshots
+└── README.md                 # Project documentation
+```
 
 ---
 
@@ -100,9 +106,7 @@ node server.js
 
 ### 📇 Contacts
 - **Add New Contact**  
-  Users can add new friends or colleagues by entering their email.  
-  Once added, the contact appears in their chat list for quick access.  
-
+  Users can add new friends or colleagues by entering their email. Once added, the contact appears in their chat list for quick access.  
   ![Add New Contact](screenshots/add_new_contact.png)
 
 ---
